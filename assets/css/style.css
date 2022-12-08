@@ -1,0 +1,180 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --html-techs: #CB92B1;
+    --css-techs: #91B6C7;
+    --js-techs: #E3DE91;
+    --bg-techs: #8a8bd1;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: var(--text-color);
+    box-sizing:border-box;
+} 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+button{
+    cursor: pointer;
+    background: none;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 17.6px;
+}
+img{
+   width:fit-content;
+}
+.statusProjet{
+    display: flex;
+    gap: 16px;
+}
+.infoPorjet{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}   
+.stargazersCountProjet, .forksProjet{
+    display: flex;
+    gap: 8px;
+}
+.languaProjet{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+}    
+.border-circle-techs{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleTechsColor{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--text-color)       ;
+}
+.js{
+    background: var(--js-techs);
+}
+.css{
+    background: var(--css-techs);
+}
+.html {
+    background: var(--html-techs);
+}
+.other{
+    background: var(--bg-techs);
+}
+body{
+    background:  var(--body-bg-color);
+    padding: 40px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 86px ;
+    gap: 30px;
+}
+#headerProjects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+    padding: 30px;
+}
+aside {
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 348px;
+
+}
+.mainProfileInfoContainer{
+    display: flex;
+    flex-direction: column;
+   align-items: center  ;
+    gap: 30px;
+    padding: 32px;
+}
+.infoProfile{
+    margin-bottom: 17px;
+    text-align: center;
+}
+.infoProfile>:first-child{
+    font-weight: bold;
+    font-size: 23px;
+}
+#userAvatar{
+    border-radius: 50%;
+    width: 128px;
+}
+.userInfo{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.userInfoItems{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.links{
+    text-decoration: none;
+}
+main{
+    grid-column-start: 2;
+}
+.cards {
+    background: var(--bg-cards); 
+    border-radius: 20px;
+    padding: 30px;
+}
+#cardsTechs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.cards h2{
+    margin-bottom: 20px;
+}
+.techs{
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 86px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projets{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+
+}
+.noPostsContainer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: bold;
+}
